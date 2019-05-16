@@ -1,0 +1,26 @@
+{
+  "fb-locale": "ru_RU",
+  "translations": {
+    "i8ayeKNFCpEw5Zduz30uBA==": {
+      "translations": [
+        {
+          "translation": "лого"
+        }
+      ]
+    },
+    "81WWfbwotSHo0wDTJ/nuAA==": {
+      "translations": [
+        {
+          "translation": "Отредактируйте {pathToApp} и сохраните, чтобы перезагрузить."
+        }
+      ]
+    },
+    "wogpNztXrvkpEoRo9XY0Jw==": {
+      "translations": [
+        {
+          "translation": "Изучить React"
+        }
+      ]
+    }
+  }
+}
