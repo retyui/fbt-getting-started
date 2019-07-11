@@ -8,11 +8,14 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const [_, triggerReRender] = useState({});
-  const updateLocale = useCallback(locale => {
-    setLocale(locale);
-    triggerReRender({});
-  }, []);
+  const triggerReRender = useState({})[1];
+  const updateLocale = useCallback(
+    locale => {
+      setLocale(locale);
+      triggerReRender({});
+    },
+    [triggerReRender]
+  );
 
   return (
     <div className="App">

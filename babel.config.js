@@ -1,11 +1,14 @@
+const path = require("path");
+const isFbtRuntime = process.env.NODE_ENV === undefined;
+
 const defaultConfig = {
-  presets: process.env.NODE_ENV === undefined ? [] : ["babel-preset-react-app"],
+  presets: isFbtRuntime ? [] : ["babel-preset-react-app"],
   plugins: [
     "babel-plugin-fbt-runtime",
     [
       "babel-plugin-fbt",
       {
-        fbtEnumPath: require("./.enum_manifest.json")
+        fbtEnumPath: path.join(__dirname, ".enum_manifest.json")
       }
     ]
   ]
